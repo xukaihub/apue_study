@@ -10,6 +10,7 @@ int main(void)
     if (stat("foo", &statbuf) < 0)
     {
         printf("stat error for foo\n");
+        exit(-1);
     }
 
     if (chmod("foo", (statbuf.st_mode & ~S_IXGRP) | S_ISGID) < 0)
