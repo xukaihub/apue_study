@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    struct  stat statbuf;
+    struct stat statbuf;
 
     /* turn on set-group-ID and turn off group-execute */
     if (stat("foo", &statbuf) < 0)
