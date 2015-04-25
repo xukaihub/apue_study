@@ -9,7 +9,7 @@ int main(int argc, const char *argv[])
 
     if (argc != 2)
     {
-        printf("wrong argument");
+        printf("wrong argument\n");
         exit(-1);
     }
 
